@@ -6,9 +6,15 @@ function gwt_wp_breadcrumb() {
 	global $post;
 	$option = get_option('govph_options');
 
+  if( !isset( $option['govph_breadcrumbs_enable'] ) ) {
+    $option['govph_breadcrumbs_enable'] = 'false';
+    update_option('govph_options', $option);
+  }
+
 	if($option['govph_breadcrumbs_enable'] != 'true'){
 		return false;
 	}
+
 	$separator = $option['govph_breadcrumbs_separator'] ? $option['govph_breadcrumbs_separator'] : ' / ';
 	$separator_block = '<span class="separator">'.$separator.'</span>';
 	
