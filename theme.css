@@ -443,11 +443,49 @@ h1.logo img { font-size: 1rem; }
 }
 
 /*masthead with text*/
-#textlogo-image { display: inline-block; width: 100px; height: 100px; vertical-align: middle; }
-#textlogo-inner-wrapper { display: inline-block; vertical-align: middle; }
-#agency-heading { display: block; position: relative; font-size: 1.06rem; text-transform: none; }
-#agency-name { display: block; position: relative; margin-top: 4px; text-transform: none; border-top: 2px solid; padding-top: 2px; line-height: 1}
-#agency-tagline { display: block; position: relative; font-size: 1.06rem; margin-top: 5px; text-transform: none; }
+#textlogo-image {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+#textlogo-image img {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+#textlogo-inner-wrapper {
+  display: inline-block;
+  /* Change size for Agency name | default is 35-40px to be set to 27px or 18pt*/
+  font-size: 27px;
+  vertical-align: middle;
+}
+
+#agency-heading {
+  display: block;
+  position: relative;
+  font-size: 1.06rem;
+  text-transform: none;
+}
+#agency-name {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+  text-transform: none;
+  border-top: 2px solid;
+  padding-top: 2px;
+  line-height: 1;
+}
+#agency-tagline {
+  display: block;
+  position: relative;
+  font-size: 1.06rem;
+  margin-top: 5px;
+  text-transform: none;
+}
 
 /*banner*/
 .container-banner { border-top: 1px solid #f2f2f2; }
