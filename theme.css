@@ -60,6 +60,8 @@
  */
 
 
+#offCanvasRight li .is-drilldown-submenu a
+
 /**
  * 2.0 - Genericons
  */
@@ -272,7 +274,7 @@ h6 {font-size: 0.63rem;}
 		line-height: 1.5
 	}
 	#offCanvasRight li .is-drilldown-submenu a {
-		font-size: 15px;
+		font-size: 18px;
 		/*font-weight: 600;*/
 	}
 	/*#offCanvasRight li ul ul a {
