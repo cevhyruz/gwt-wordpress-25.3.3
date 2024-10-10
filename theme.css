@@ -597,7 +597,12 @@ h1.logo img { font-size: 1rem; }
  * <= 360px
  */
 @media only screen and (max-width: 20em) { 
-	#agency-name { font-size: 11.5vw !important; }
+	#agency-name {
+    font-size: 11.5vw !important;
+  }
+  .thumbnail {
+    width: 50vw;
+  }
 }
 
 /**
@@ -605,6 +610,9 @@ h1.logo img { font-size: 1rem; }
  */
 @media only screen and (max-width: 30.063em) {
 	#agency-name { font-size: 7.5vw; }
+  .thumbnail {
+    width: 90vw;
+  }
 }
 
 /**
