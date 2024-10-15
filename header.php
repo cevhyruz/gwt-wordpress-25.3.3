@@ -153,10 +153,10 @@ Press esc, or click the close the button to close this dialog box.
 			<ul class="vertical menu" data-drilldown data-parent-link="true">
 				<?php wp_nav_menu( array('theme_location'  => 'topbar_left', 'items_wrap' => '%3$s', 'container' => false,'walker' => new Off_Canvass_Menu() )); ?> 
 				<?php wp_nav_menu( array('theme_location'  => 'topbar_right', 'items_wrap' => '%3$s', 'container' => false, 'fallback_cb' => false, 'walker' => new Off_Canvass_Menu() )); ?>
-				<?php // if(has_nav_menu('aux_nav')): ?>
+				<?php if(has_nav_menu('aux_nav')): ?>
 				<li id="aux-offmenu" class="list-item">AUXILIARY MENU</li>
 				<?php wp_nav_menu( array('theme_location'  => 'aux_nav', 'items_wrap' => '%3$s', 'container' => false, 'fallback_cb' => false, 'walker' => new Off_Canvass_Menu() )); ?>
-				<?php //endif; ?>
+				<?php endif; ?>
 			</ul>
 		</nav>
 
